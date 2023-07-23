@@ -7,12 +7,12 @@ import { useState } from "react";
 
 const InputTareas = () => {
 
-  const [capturaTarea,setCapturaTarea] = useState('');
-  const [agregarTarea, setAgregarTarea] = useState([]);
+  const [capturaTareas,setCapturaTareas] = useState('');
+  const [agregarTareas, setAgregarTareas] = useState([]);
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    setAgregarTarea([...agregarTarea,capturaTarea]);
+    setAgregarTareas([...agregarTareas,capturaTareas]);
     setCapturaTarea('');
   }
 
@@ -27,19 +27,19 @@ const InputTareas = () => {
           type="text"
           placeholder="Tarea #"
           className="me-3"
-          value={capturaTarea}
-          onChange={(e)=>setCapturaTarea(e.target.value)}
+          value={capturaTareas}
+          onChange={(e)=>setCapturaTareas(e.target.value)}
 
           />
           <Button
           type="submit"
           variant="primary"
           >
-            Agregar
+            Agregar Tarea
           </Button>
         </FormGroup>
       </Form>
-      <ListadoTareas></ListadoTareas>
+      <ListadoTareas propsAgregarTareas={agregarTareas}></ListadoTareas>
     </>
   );
 };

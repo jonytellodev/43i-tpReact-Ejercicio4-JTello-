@@ -1,13 +1,13 @@
-import { ListGroup,Button } from "react-bootstrap";
+import {ListGroup} from "react-bootstrap";
+import Tareas from "./Tareas";
 
-const ListadoTareas = () => {
+const ListadoTareas = ({propsAgregarTareas}) => {
     return (
         <>
         <ListGroup className="d-flex justify-content-center align-items-center">
-            <ListGroup.Item className="d-flex justify-content-between mt-3 inputAndListWidth">Tarea 1<Button variant="danger">Borrar</Button></ListGroup.Item>
-            <ListGroup.Item className="d-flex justify-content-between mt-3 inputAndListWidth">Tarea 2<Button variant="danger">Borrar</Button></ListGroup.Item>
-            <ListGroup.Item className="d-flex justify-content-between mt-3 inputAndListWidth">Tarea 3<Button variant="danger">Borrar</Button></ListGroup.Item>
-            <ListGroup.Item className="d-flex justify-content-between mt-3 inputAndListWidth">Tarea 4<Button variant="danger">Borrar</Button></ListGroup.Item>
+            {
+                propsAgregarTareas.map((nuevaTarea, index)=><Tareas key={index} textoTarea={nuevaTarea}></Tareas>)
+            }
         </ListGroup>
         </>
     );
