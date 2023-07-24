@@ -10,7 +10,7 @@ function App() {
     <>
       <Container fluid className="gaussianBlur mt-5">
         <h1 className="text-center mt-2 formatTitle">Bienvenido!</h1>
-        <h2 className="text-center mt-4">Ingresa tus tareas</h2>
+        <h2 className="text-center mt-4 formatSubtitle">Ingresa tus tareas</h2>
         <InputTareas></InputTareas>
         <Row>
           <Col></Col>

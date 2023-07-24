@@ -12,25 +12,25 @@ footer {
 }
 
 .formatTitle {
-  font-size: 2.6rem;
+  font-size: 6rem;
   color: #ffffff;
   font-weight: 600;
 }
 
 .formatSubtitle {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 .textRemFormat1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .textRemFormat2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .textRemFormat3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .gaussianBlur {
@@ -45,6 +45,93 @@ footer {
 }
 
 .inputAndListWidth {
-  width: 85%;
-  height: 6vh;
+  width: 90%;
+  height: 90px;
+}
+
+.lineHeightTareas {
+  line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .inputAndListWidth {
+    width: 85%;
+    height: 55px;
+  }
+  .lineHeightTareas {
+    line-height: 40px;
+  }
+  .formatTitle {
+    font-size: 2rem;
+  }
+  
+  .formatSubtitle {
+    font-size: 1.5rem;
+  }
+  .textRemFormat2 {
+    font-size: 1.5rem;
+  }
+  
+  .textRemFormat3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .inputAndListWidth {
+    width: 85%;
+    height: 55px;
+  }
+  .lineHeightTareas {
+    line-height: 30px;
+  }
+
+  .formatTitle {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .formatSubtitle {
+    font-size: 1.5rem;
+  }
+
+  .inputAndListWidth {
+    width: 85%;
+    height: 55px;
+  }
+  .textRemFormat2 {
+    font-size: 1.5rem;
+  }
+  
+  .textRemFormat3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .inputAndListWidth {
+    width: 85%;
+    height: 55px;
+  }
+  .lineHeightTareas {
+    line-height: 40px;
+  }
+  .formatTitle {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .formatSubtitle {
+    font-size: 2rem;
+  }
+
+  .textRemFormat2 {
+    font-size: 1.5rem;
+  }
+  
+  .textRemFormat3 {
+    font-size: 1.2rem;
+  }
 }

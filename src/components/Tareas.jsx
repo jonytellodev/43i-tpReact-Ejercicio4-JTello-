@@ -6,8 +6,9 @@ const Tareas = ({ textoTarea, suprimirTareas }) => {
       {textoTarea}{""}
       <Button
       variant="danger"
-      onClick={()=> suprimirTareas(textoTarea)}
-
+      onClick={()=> suprimirTareas(textoTarea)
+      }
+      className="lineHeightTareas"
       >Borrar</Button>
     </ListGroup.Item>
   );
