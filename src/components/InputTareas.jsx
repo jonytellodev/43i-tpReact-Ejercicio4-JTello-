@@ -3,8 +3,6 @@ import "../App.css";
 import ListadoTareas from "./ListadoTareas";
 import { useState } from "react";
 
-
-
 const InputTareas = () => {
 
   const [capturaTareas,setCapturaTareas] = useState('');
@@ -13,7 +11,12 @@ const InputTareas = () => {
   const handleSubmit = (e)=>{
     e.preventDefault();
     setAgregarTareas([...agregarTareas,capturaTareas]);
-    setCapturaTarea('');
+    setCapturaTareas('');
+  }
+
+  const suprimirTareas = (eliminarTareas)=>{
+    let filtroAgregarTareas = agregarTareas.filter((tareaParaSuprimir)=> tareaParaSuprimir !== eliminarTareas);
+    setAgregarTareas(filtroAgregarTareas);
   }
 
   return (
@@ -39,7 +42,7 @@ const InputTareas = () => {
           </Button>
         </FormGroup>
       </Form>
-      <ListadoTareas propsAgregarTareas={agregarTareas}></ListadoTareas>
+      <ListadoTareas propsAgregarTareas={agregarTareas} suprimirTareas={suprimirTareas}></ListadoTareas>
     </>
   );
 };
