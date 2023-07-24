@@ -1,8 +1,24 @@
-# React + Vite
+# Hello World!
+## Trabajo Practico en React
+***
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Se desarrolla una aplicacion correspondiente al punto numero 4 del trabajo practico sobre React.
 
-Currently, two official plugins are available:
+Se solicita crear una aplicacion para generar lista de tareas. La misma cuenta con las siguientes caracteristicas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Agregar Tareas nuevas que se iran guardando en un listado mostrado en pantalla.
+* Opcion para eliminar de forma individual aquella tarea que ya no se requiera tener en el listado 
+
+#### Tecnologias utilizadas
+
+* Node JS
+* React
+* Bootstrap
+* CSS Vanila
+
+***
+
+##### Realizado por Jonathan Tello Carrasco
+para el curso "Desarrollador Web Full Stack" de Rolling Code School.
+
+Tucumán, Argentina
